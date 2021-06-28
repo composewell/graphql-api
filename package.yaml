@@ -1,5 +1,5 @@
 name: graphql-api
-version: 0.3.0
+version: 0.4.0
 synopsis: GraphQL API
 description: |
   Implement [GraphQL](http://graphql.org/) servers in Haskell.
