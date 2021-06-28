@@ -34,7 +34,7 @@ module GraphQL.Internal.Resolver
 -- - Directives (https://facebook.github.io/graphql/#sec-Type-System.Directives)
 -- - Enforce non-empty lists (might only be doable via value-level validation)
 
-import Protolude hiding (Enum, TypeError, throwE)
+import Protolude hiding (Enum, TypeError, throwE, Handler)
 
 import qualified Data.Text as Text
 import qualified Data.List.NonEmpty as NonEmpty

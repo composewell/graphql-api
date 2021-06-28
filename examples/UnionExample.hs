@@ -1,7 +1,7 @@
 {-# LANGUAGE DataKinds #-}
 module Main (main) where
 
-import Protolude
+import Protolude hiding (Handler)
 
 import qualified Data.Aeson as Aeson
 import GraphQL.API (Field, List, Object, Union)
