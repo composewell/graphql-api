@@ -5,7 +5,7 @@
 -- | Demonstrate input object usage.
 module Main (main) where
 
-import Protolude hiding (Enum)
+import Protolude hiding (Enum, Handler)
 
 import qualified Data.Aeson as Aeson
 

@@ -32,6 +32,7 @@ import Data.Attoparsec.Text
 import qualified GraphQL.Internal.Syntax.AST as AST
 import GraphQL.Internal.Syntax.Tokens (tok, whiteSpace)
 import GraphQL.Internal.Name (nameParser)
+import qualified Protolude.Conv as Conv
 
 -- * Document
 
@@ -185,7 +186,7 @@ stringValue = do
     -- Turns out this is really tricky, so we're going to cheat by
     -- reconstructing a literal string (by putting quotes around it) and
     -- delegating all the hard work to Aeson.
-    unescapeText str = A.parseOnly jstring ("\"" <> toS str <> "\"")
+    unescapeText str = A.parseOnly jstring ("\"" <> Conv.toS str <> "\"")
 
 -- Notice it can be empty
 listValue :: Parser AST.ListValue

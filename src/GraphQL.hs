@@ -24,7 +24,7 @@ module GraphQL
   , Value
   ) where
 
-import Protolude
+import Protolude hiding (Handler)
 
 import Data.Attoparsec.Text (parseOnly, endOfInput)
 import Data.List.NonEmpty (NonEmpty(..))
